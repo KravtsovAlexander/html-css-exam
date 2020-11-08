@@ -15,6 +15,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 html {
     height: 100%;
 }
@@ -44,11 +45,11 @@ footer {
 }
 
 header {
-    height: 50px;
     color: white;
     background-color: #5900b2;
-    font-size: 16px;
-    padding-left: 15px;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    padding: 5px 0;
 }
 
 .header-content {
@@ -58,41 +59,32 @@ header {
 .header-nav {
     display: inherit;
     align-items: inherit;
-    margin-left: 50px;
+    margin: 0 5%;
+    width: 40%;
 }
 
 .header-nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 3px 10px;
     background-color: #7700c1;
     color: white;
-    width: 100px;
-    height: 25px;
-    border-radius: 9999px;
-
+    border-radius: 9999px; /*Есть ли более элегантный способ делать из прямоугольных элементов такие вот "колбаски" с полукруглыми боковыми гранями?*/
 }
 
+/* Размеры ссылок должны зависить от наполняющего текста или вторая должна быть больше остальных, как на картинке? */
 .header-nav a:nth-child(2) {
-    width: 200px;
-    margin: 0 40px;
-}
-
-.profile-col {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    margin: 0 auto;
 }
 
 .profile {
     display: inherit;
     align-items: inherit;
-    height: 40px;
+    height: 2.5rem;
     padding: 3px;
     background: #7700c1;
     border-radius: 9999px;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 10%;
 }
 
 .profile img {
