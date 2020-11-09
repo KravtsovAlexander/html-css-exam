@@ -21,17 +21,20 @@ html {
 }
 
 body {
+    font-family: 'SF Pro Display';
+    font-style: normal;
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: gray; /*ВРЕМЕННЫЙ ЦВЕТ*/
+    background-color: #fafafb;
 }
 
 .main-block {
     flex: 1 0 auto;
     display: flex;
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-right: 3rem;
 }
 
 main {
@@ -40,14 +43,13 @@ main {
 
 footer {
     flex: 0 0 auto;
-    background-color: gray;
+    background-color: #fafafb;
     height: 50px;
 }
 
 header {
     color: white;
     background-color: #5900b2;
-    padding-left: 1rem;
     font-size: 0.8rem;
     padding: 5px 0;
 }
@@ -55,7 +57,9 @@ header {
 .header-content {
     display: flex;
     align-items: center;
+    padding-left: 1rem;
 }
+
 .header-nav {
     display: inherit;
     align-items: inherit;
@@ -65,7 +69,7 @@ header {
 
 .header-nav a {
     text-align: center;
-    padding: 3px 10px;
+    padding: 5px 10%;
     background-color: #7700c1;
     color: white;
     border-radius: 9999px; /*Есть ли более элегантный способ делать из прямоугольных элементов такие вот "колбаски" с полукруглыми боковыми гранями?*/
@@ -84,7 +88,7 @@ header {
     background: #7700c1;
     border-radius: 9999px;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 3rem;
 }
 
 .profile img {
@@ -93,11 +97,18 @@ header {
     border-radius: 50%;
 }
 
-.profile div {
-    transform: rotate(-45deg);
-}
-
-.profile div,
-.profile p {
+.profile span,
+.profile-name  {
     margin: 0 5px;
 }
+
+.border-bg {
+    background-color: white;
+    border: 2px solid #dcd8e1;
+    border-radius: 10px;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+

@@ -6,9 +6,12 @@
     <meta name="author" content="Kravtsov Alexander">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASK-7</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/flex-grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/task-7.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
    <header class="flex-row">
@@ -21,26 +24,31 @@
            </nav>
             <div class="profile">
                 <img src="img/proxy-image.jpeg" alt="profile_picture.jpg">
-                <p>Александр</p>
-                <div>&#8735;</div>
+                <h3 class="profile-name">Александр</h3>
+                <span class="material-icons">expand_more</span>
             </div>
        </div>
    </header> 
    <div class="main-block">
-       <aside class="col-2">ASIDE</aside>
+       <aside class="col-2 border-bg">ASIDE</aside>
        <main class="col-10">
-            <div class="col-9 main-content">
-                <section class="skill-block">
+            <div class="col-9 col-lg-12 main-content">
+                <section class="skill-block border-bg professional-skills">
                     <div class="skill-header">
-                        <h2 class="skill-title">Профессиональные навыки</h2>
-                        <ul class="title-icons">
-                            <li>&#9835;</li>
-                            <li>&#9835;</li>
-                            <li>&#9835;</li>
-                            <li>&#9835;</li>
-                        </ul>
+                        <h3 class="skill-title">Профессиональные навыки</h3>
+                        <div class="title-icons">
+                            <span class="material-icons info-icon">error_outline</span>
+                            <div class="modal-clues border-bg">
+                                <span>
+                                    Навыки, необходимые вам для вашей профессиональной деятельности
+                                </span>
+                            </div>
+                            <span class="material-icons format-icon-temp">format_align_left</span>
+                            <span class="material-icons apps-icon-temp">apps</span>
+                            <span class="material-icons arrow-icon-temp">arrow_circle_up</span>
+                        </div>
                     </div>
-                    <div class="temp">
+                    <div class="tags">
                         <span>Web-программирование</span>
                         <span>C#</span>
                         <span>Blender</span>
@@ -57,45 +65,284 @@
                     </nav>
                     <div class="skill-content">
                         <div class="col-3 flex-column">
-                            <div class="skill-option">SKILL-OPTION</div>
+                            <nav class="skill-option">
+                                <div>
+                                    <div class="icon-paragraph">
+                                        <span class="material-icons">business_center</span>
+                                        <a href="#">Инструменты</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="icon-paragraph">
+                                                <span class="material-icons">keyboard_arrow_right</span>
+                                                <a href="#">IDE</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon-paragraph">
+                                                <span class="material-icons">keyboard_arrow_right</span>
+                                                <a href="#">Frameworks</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icon-paragraph">
+                                    <span class="material-icons">wb_incandescent</span>
+                                    <a href="#">Концепции</a>
+                                </div>
+                                <div class="icon-paragraph">
+                                    <span class="material-icons">blur_on</span>
+                                    <a href="#">Стили</a>
+                                </div>
+                            </nav>
                         </div>
-                        <div class="col-9 flex-row">
-                            <div class="skill-rating flex-column">
-                                <div class="flex-row">
-                                    <ul>
-                                        <li>Visual Studio</li>
-                                        <li>7/7</li>
-                                        <li>&#9835;</li>
-                                    </ul>
-                                    
-                                    
+                        <div class="col-9 flex-row skill-rating-block">
+                            <div class="flex-column skill-rating-wrapper">
+                                <div class="skill-rating flex-row">
+                                    <h3>Visual Studio</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="flex-row">
-                                    <ul>
-                                        <li>Xcode</li>
-                                        <li>7/7</li>
-                                        <li>&#9835;</li>
-                                    </ul>
+                                <div class="skill-rating flex-row">
+                                    <h3>Xcode</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="flex-row">
-                                    <ul>
-                                        <li>Xcode</li>
-                                        <li>7/7</li>
-                                        <li>&#9835;</li>
-                                    </ul>
+                                <div class="skill-rating flex-row">
+                                    <h3>Xcode</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill-rating flex-column">SKILL-RATING</div>
+                            <div class="flex-column skill-rating-wrapper">
+                                <div class="skill-rating flex-row">
+                                    <h3>CLion</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                                <div class="skill-rating flex-row">
+                                    <h3>Brackets</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                                <div class="skill-rating flex-row">
+                                    <h3>Brackets</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="skill-block">SECTION2</section>
+                <section class="skill-block border-bg meta-skills">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Метанавыки</h3>
+                        <div class="title-icons">
+                            <span class="material-icons info-icon">error_outline</span>
+                            <div class="modal-clues border-bg">
+                                <span>
+                                   Навыки, отвечающие за успешное участие в рабочем процессе, высокую производительность, при этом несвязанные с конкретной предметной областью 
+                                </span>
+                            </div>
+                            <span class="material-icons format-icon-temp">format_align_left</span>
+                            <span class="material-icons apps-icon-temp">apps</span>
+                            <span class="material-icons arrow-icon-temp">arrow_circle_up</span>
+                        </div>
+                    </div>
+                    <div class="tags">
+                    </div>
+                    <nav class="skill-panel">
+                        <a href="#">Management</a>
+                        <a href="#">Знание языков</a>
+                        <a href="#">Работа в команде</a>
+                        <a href="#">Управление временем</a>
+                    </nav>
+                    <div class="skill-content">
+                        <div class="col-3 flex-column">
+                            <nav class="skill-option">
+                                <div>
+                                    <div class="icon-paragraph">
+                                        <span class="material-icons">business_center</span>
+                                        <a href="#">Инструменты</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="icon-paragraph">
+                                                <span class="material-icons">keyboard_arrow_right</span>
+                                                <a href="#">IDE</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon-paragraph">
+                                                <span class="material-icons">keyboard_arrow_right</span>
+                                                <a href="#">Frameworks</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icon-paragraph">
+                                    <span class="material-icons">wb_incandescent</span>
+                                    <a href="#">Концепции</a>
+                                </div>
+                                <div class="icon-paragraph">
+                                    <span class="material-icons">blur_on</span>
+                                    <a href="#">Стили</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-9 flex-row skill-rating-block">
+                            <div class="flex-column skill-rating-wrapper">
+                                <div class="skill-rating flex-row">
+                                    <h3>Trello</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                                <div class="skill-rating flex-row">
+                                    <h3>Jira</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="flex-column skill-rating-wrapper">
+                                <div class="skill-rating flex-row">
+                                    <h3>GitHub</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                                <div class="skill-rating flex-row">
+                                    <h3>Wrike</h3>
+                                    <p>7/7</p>
+                                    <span class="material-icons info-icon">error_outline</span>
+                                    <div class="modal-clues border-bg">
+                                        <span>
+                                            Знаю предметную область на отличном уровне
+                                        </span>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="main-nav col-3">
-                <nav class="">MAIN NAV</nav>
+            <div class="col-3 interests-wrapper col-lg-12"> 
+                <section class="border-bg interests-block">
+                    <div class="interests-header">
+                        <h3 class="skill-title">Интересы</h3>
+                        <div class="title-icons">
+                            <span class="material-icons info-icon">error_outline</span>
+                            <div class="modal-clues border-bg">
+                                <span>
+                                    Круг ваших интересов
+                                </span>
+                            </div>                              
+                            <span href="#sort-block" class="material-icons sort-icon">sort</span>
+                            <div class="sort-block border-bg">
+                               <a href="#">Сортировать по дате создания</a> 
+                               <a href="#">Сортировать по периодичности</a> 
+                            </div>                        
+                            <span class="material-icons arrow-icon-temp">arrow_circle_up</span>
+                        </div>
+                    </div>
+                    <ul class="interests-list">
+                        <li>
+                            <table>
+                                <tr>
+                                    <td><h4>1.</h4></td>
+                                    <td><h4>Приборостроение</h4></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="interests-description">
+                                        <p>Интересуюсь тем-то и тем-то, потому что приборостроение у меня в интересах</p>
+                                        <p><span>Периодичность: </span>раз в день</p>
+                                        <p><span>Дата создания: </span>12.03.20</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td><h4>2.</h4></td>
+                                    <td><h4>Робототехника</h4></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="interests-description">
+                                        <p>Роботы и все, что с ними связано</p>
+                                        <p><span>Периодичность: </span>раз в день</p>
+                                        <p><span>Дата создания: </span>12.03.20</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td><h4>3.</h4></td>
+                                    <td><h4>Программирование</h4></td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td><h4>4.</h4></td>
+                                    <td><h4>Дизайн</h4></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </section>
             </div>
        </main>
    </div>
+
    <footer>FOOTER</footer>
 </body>
 </html>
