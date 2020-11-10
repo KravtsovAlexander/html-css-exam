@@ -1,7 +1,6 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem; 
 }
 
 .skill-block,
@@ -11,6 +10,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     color: #230047;
+    margin: 0 1rem
+}
+
+.interests-block {
+    margin-left: 0;
 }
 
 .skill-block a {
@@ -118,7 +122,7 @@
     padding-right: 10%;
 }
 
-.skill-rating-block, /*-------------------ВОЗМОЖНО ЛИШНЕЕ-------------------------*/
+.skill-rating-block,
 .skill-option-block {
     padding: 0.5rem 0;
     flex: 1;
@@ -229,7 +233,7 @@
 }
 
 .skill-rating .modal-clues {
-    left: 90%;
+    right: 0;
     top: 90%;
     width: 80%;
 }
@@ -297,9 +301,56 @@
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .skill-panel {
         flex-direction: column;
+        margin-right: 0 !important;
     }
 
     .skill-content {
         padding-right: 0;
+    }
+
+    .skill-block {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .skill-panel {
+        flex-direction: column;
+        margin-right: 0 !important;
+    }
+ 
+    .interests-wrapper {
+        order: -1;
+    }
+
+    .skill-block {
+        padding-right: 1rem;
+    }
+
+    .interests-block {
+        margin: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .interests-description {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+   
+   .skill-content {
+        padding-right: 0;
+        flex-direction: column;
+    }
+
+    .skill-rating-block {
+        flex-direction: column;
+    }
+
+    .skill-rating-wrapper {
+        width: 100%;
     }
 }

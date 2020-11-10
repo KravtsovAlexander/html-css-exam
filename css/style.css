@@ -34,7 +34,7 @@ body {
     flex: 1 0 auto;
     display: flex;
     margin-top: 2rem;
-    margin-right: 3rem;
+    margin-bottom: 2rem;
 }
 
 main {
@@ -112,3 +112,40 @@ header {
     cursor: pointer;
 }
 
+.main-block-aside {
+    border-left: 0 solid black;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 769px) {
+
+    .main-block > aside {
+        display: none;
+    }
+
+    .header-content {
+        margin-left: 0;
+        padding-left: 0;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .profile-name,
+    .profile > .material-icons {
+        display: none;
+    }
+
+    .profile {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+}

@@ -252,7 +252,7 @@
     }
 }
 
-/* @media (min-width: 769px) and (max-width: 991px) {
+@media (max-width: 769px) {
 
     .col-md-1 {
     -ms-flex: 0 0 8.333333%;
@@ -369,4 +369,4 @@
     .offset-md-11 {
         margin-left: 91.666667%;
     }
-} */
+}
