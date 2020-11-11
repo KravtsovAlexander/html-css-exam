@@ -100,7 +100,7 @@
     flex: 1;
     border-bottom: 2px solid #dcd8e1;
     text-align: center;
-    padding: 1%;
+    padding: 1% 0.5%;
     transition: color 300ms, border 300ms;
 }
 
@@ -359,7 +359,7 @@
         margin-bottom: 1rem;
     }
 
-    .interests-description {
+    .interests-list tr:nth-child(2) {
         display: none;
     }
 

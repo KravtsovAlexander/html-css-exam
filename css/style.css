@@ -59,13 +59,12 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
+    padding: 0 1rem;
 }
 
 .header-nav {
     display: flex;
-    align-items: center;
-    margin: 0 5%;
+    margin: 0 10%;
     width: 40%;
 }
 
@@ -161,7 +160,6 @@ header {
 
     .header-content {
         margin-left: 0;
-        padding-left: 0;
         flex-direction: column;
         position: relative;
     }
