@@ -10,11 +10,10 @@
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     color: #230047;
-    margin: 0 1rem
 }
 
-.interests-block {
-    margin-left: 0;
+.skill-block {
+    margin: 0 1rem;
 }
 
 .skill-block a {
@@ -83,7 +82,7 @@
     background-color: #ddedff;
     color: #009ede;
     padding: 3px 10px;
-    border-radius: 9999px;
+    border-radius: 10px;
 }
 
 .skill-panel {
@@ -146,14 +145,14 @@
 
 .skill-rating {
     align-items: center;
-    border-bottom: 3px solid #009ede; /*Можно ли тут скруглить боковые грани?*/
+    border-bottom: 3px solid #009ede;
     padding: 5px 0;
     margin-bottom: 1rem;
     position: relative;
 }
 
 .meta-skills .skill-rating {
-    border-bottom: 3px solid #00dd4e; /*Можно ли тут скруглить боковые грани?*/
+    border-bottom: 3px solid #00dd4e;
 }
 
 .skill-rating :nth-child(1){
@@ -296,6 +295,10 @@
     main {
         flex-direction: column;
     }
+
+    .modal-clues {
+        width: auto !important;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -310,6 +313,10 @@
 
     .skill-block {
         padding-right: 1rem;
+    }
+
+    .modal-clues {
+        width: auto !important;
     }
 }
 
@@ -327,6 +334,13 @@
     .skill-block {
         padding-right: 1rem;
     }
+
+    .skill-option {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
 
     .interests-block {
         margin: 0 1rem;
@@ -352,5 +366,9 @@
 
     .skill-rating-wrapper {
         width: 100%;
+    }
+
+    .modal-clues {
+        width: auto !important;
     }
 }

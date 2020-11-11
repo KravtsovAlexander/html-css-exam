@@ -1,0 +1,157 @@
+body {
+    background-color: #dcd8e1;
+}
+
+input {
+    margin: 1rem 0;
+}
+
+.main-block {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #090011;
+}
+
+
+.main-content {
+    background-color: #fafafb;
+    margin: 0 1rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    height: 100%;
+}
+
+form {
+    height: 100%;
+}
+
+.fields,
+.buttons,
+.tags {
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.fields {
+    border-right: 2px solid #dcd8e1;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-block-aside,
+.main-nav-wrapper {
+    background-color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-700 {
+    font-weight: 700;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+input[type="text"] {
+    outline-style: none;
+    background-color: white;
+    border: 2px solid #dcd8e1;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#search_skills {
+    width: 100%;
+}
+
+#language,
+#language-level {
+    min-width: 8rem;
+    max-width: 45%;
+}
+
+.plus {
+    background-color: #dcd8e1;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.add-language {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete-icon {
+    margin-left: 5px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.purple-tag {
+    color: #ff00d2;
+    background-color: #ffc6fe;
+}
+
+.blue-tag {
+    color: #009ede;
+    background-color: #ddedff;
+}
+
+.yellow-tag {
+    color: #ff8a00;
+    background-color: #fdfac1;
+}
+
+.main-nav {
+    padding-top: 1.5rem;
+}
+
+.main-nav a {
+    display: block;
+    padding: 1rem;
+    color: #090011;
+    border-left: 5px solid transparent;
+    transition: border-color 300ms;
+}
+
+.main-nav a:hover {
+    border-color: #5900b2;
+}
+
+.main-nav a:nth-child(4) {
+    border-color: #5900b2;
+    font-weight: 700;
+}

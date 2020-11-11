@@ -35,6 +35,8 @@ body {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 main {
@@ -72,10 +74,9 @@ header {
     padding: 5px 10%;
     background-color: #7700c1;
     color: white;
-    border-radius: 9999px; /*Есть ли более элегантный способ делать из прямоугольных элементов такие вот "колбаски" с полукруглыми боковыми гранями?*/
+    border-radius: 10px;
 }
 
-/* Размеры ссылок должны зависить от наполняющего текста или вторая должна быть больше остальных, как на картинке? */
 .header-nav a:nth-child(2) {
     margin: 0 auto;
 }
@@ -86,7 +87,7 @@ header {
     height: 2.5rem;
     padding: 3px;
     background: #7700c1;
-    border-radius: 9999px;
+    border-radius: 2.5rem;
     margin-left: auto;
     margin-right: 3rem;
 }
@@ -112,11 +113,45 @@ header {
     cursor: pointer;
 }
 
-.main-block-aside {
-    border-left: 0 solid black;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+/*buttons*/
+.contained-button-primary {
+    outline-style: none;
+    border: transparent;
+    background-color: #5900b2;
+    color: white;
+    transition: background-color 300ms, box-shadow 300ms;
 }
+
+.contained-button-primary:hover {
+    background-color: #7800c1;
+}
+
+.contained-button-primary:focus{
+    background-color: #47008e;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contained-button-secondary {
+    outline-style: none;
+    border: transparent;
+    background-color: #dcd8e1;
+    color: #090011;
+    transition: background-color 300ms, box-shadow 300ms;
+}
+
+.contained-button-secondary:hover {
+    box-shadow: 2px 2px 4px rgba(120, 0, 193, 0.5);
+}
+
+.contained-button-secondary:focus {
+    box-shadow: 0 0 4px 2px rgba(120, 0, 193, 0.5);
+}
+
+.contained-button-primary:hover,
+.contained-button-secondary:hover {
+    cursor: pointer;
+}
+/*buttons*/
 
 @media screen and (max-width: 769px) {
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML exam. Task 4.">
+    <meta name="author" content="Kravtsov Alexander">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-4</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/task-4.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+   <header class="flex-row">
+       <div class="offset-2 col-10 col-sm-12 header-content">
+           <h1>ОЛИМП</h1>
+           <nav class="header-nav">
+               <a href="#">link</a>
+               <a href="#">another_link</a>
+               <a href="#">link</a>
+           </nav>
+            <div class="profile">
+                <img src="img/proxy-image.jpeg" alt="profile_picture.jpg">
+                <h3 class="profile-name">Александр</h3>
+                <span class="material-icons">expand_more</span>
+            </div>
+       </div>
+   </header> 
+   <div class="main-block">
+       <aside class="col-2 main-block-aside">ASIDE</aside>
+       <main class="col-10">
+            <div class="col-9 main-content-wrapper">
+                <div class="main-content flex-row">
+                    <div class="col-7 form-wrapper">
+                        <form action="#" method="POST" name="key_skills_form" class="flex-column">
+                            <div class="fields">
+                                <div class="skills">
+                                    <span class="text-700">Ваши ключевые навыки:</span>
+                                    <span class="small-text">Навыки, по которым вы хотите, чтобы вас искали</span>
+                                    <div>
+                                        <input type="text" name="search_skills" id="search_skills" placeholder="Начните вводить здесь">
+                                    </div>
+                                </div>
+                                <div class="languages">
+                                    <span class="text-700">Знание языков:</span>
+                                    <div>
+                                        <input type="text" name="language" id="language" placeholder="Английский">
+                                        <input type="text" name="language-level" id="language-level" placeholder="A1 - Начальный">
+                                    </div>
+                                </div>
+                                <div class="add-language">
+                                    <span class="material-icons plus">add</span>
+                                    <span class="text-500">Добавить еще язык</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <input class="contained-button-primary" type="submit" name="submit" id="submit" value="Сохранить">
+                                <input class="contained-button-secondary" type="reset" name="reset" id="reset" value="Отмена">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5 tags-wrapper">
+                        <div class="tags">
+                            <div class="tag blue-tag">
+                                <span>Programming</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>
+                            <div class="tag blue-tag">
+                                <span>Python</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>
+                            <div class="tag purple-tag">
+                                <span>Critical Thinking</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>
+                            <div class="tag blue-tag">
+                                <span>Machine Learning</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>
+                            <div class="tag purple-tag">
+                                <span>Good Communication Skills</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>                      
+                            <div class="tag yellow-tag">
+                                <span>A1 - English</span>
+                                <span class="material-icons delete-icon">delete</span>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 main-nav-wrapper"> 
+               <nav class="main-nav">
+                   <a href="#">Личная информация</a>
+                   <a href="#">Основное образование</a>
+                   <a href="#">Дополнительное образование</a>
+                   <a href="#">Ключевые навыки</a>
+                   <a href="#">Профессиональные навыки</a>
+                   <a href="#">Обо мне</a>
+               </nav> 
+            </div>
+       </main>
+   </div>
+
+   <footer>FOOTER</footer>
+</body>
+</html>
