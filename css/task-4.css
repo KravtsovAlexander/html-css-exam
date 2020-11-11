@@ -42,8 +42,7 @@ form {
     align-items: flex-end;
 }
 
-.main-block-aside,
-.main-nav-wrapper {
+.main-block-aside {
     background-color: white;
 }
 
@@ -136,6 +135,8 @@ input[type="reset"] {
 }
 
 .main-nav {
+    background-color: #fafafb;
+    height: 100%;
     padding-top: 1.5rem;
 }
 
@@ -154,4 +155,84 @@ input[type="reset"] {
 .main-nav a:nth-child(4) {
     border-color: #5900b2;
     font-weight: 700;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-content-wrapper {
+        max-width: 100%;
+        flex: 1;
+    }
+
+    .main-nav-wrapper {
+        order: -1;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .main-nav {
+        display: flex;
+        margin: 0 1rem;
+    }
+
+    .main-nav a {
+        border: unset;
+        border-bottom: 5px solid transparent;
+        font-size: 0.8rem;
+        padding: 0 1%;
+        text-align: center;
+    }
+
+
+    .main-nav a:nth-child(4) {
+    border-color: #5900b2;
+    font-weight: 700;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-content-wrapper {
+        max-width: 100%;
+        flex: 1;
+    }
+
+    .main-nav-wrapper {
+        order: -1;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .main-nav {
+        margin: 0 1rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .tags-wrapper {
+        order: -1;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+        flex: 1 0 auto;
+    }
+
+    .fields {
+        border: unset;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }

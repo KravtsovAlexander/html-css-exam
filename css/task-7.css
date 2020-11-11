@@ -106,11 +106,11 @@
 
 .skill-panel > a:nth-child(1) {
     font-weight: 700;
-    border-bottom: 2px solid #7700c1;
+    border-color: #7700c1;
 }
 
 .skill-panel a:hover {
-    border-bottom: 2px solid #7700c1;
+    border-color: #7700c1;
     color: #090011;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -307,6 +307,12 @@
         margin-right: 0 !important;
     }
 
+    .skill-panel a {
+        border: unset;
+        border-left: 2px solid transparent;
+        text-align: left;
+    }
+
     .skill-content {
         padding-right: 0;
     }
@@ -325,6 +331,12 @@
     .skill-panel {
         flex-direction: column;
         margin-right: 0 !important;
+    }
+    
+    .skill-panel a {
+        border: unset;
+        border-left: 2px solid transparent;
+        text-align: left;
     }
  
     .interests-wrapper {
